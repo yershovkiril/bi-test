@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <h2 style="text-align: center;">Get sum profit by month </h2>
+  <h5 style="text-align: center;">You can set the value for the filter by the number of sales (by default - 200 items/month)</h5>
+  <p style="text-align: center;">
+    <div class="input-group" style="width: 200px; margin: 0 auto;">
+      <input type="text" class="form-control" value="200">
+      <span class="input-group-btn">
+          <button class="btn btn-primary sales-button" type="button">Go!</button>
+        </span>
+    </div><!-- /input-group -->
+  </p>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="no-row" style="text-align: center;">Can't calculate profit for this condition</h3>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Date</th>
+              <th>Profit</th>
+            </tr>
+            </thead>
+            <tbody class="table-body">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

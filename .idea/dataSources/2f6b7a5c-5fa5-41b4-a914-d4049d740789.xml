@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - bi-test_development@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="bi-test_development">
+      <object-id>46204</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12669</object-id>
+    </database>
+    <database id="3" name="myapp_dev">
+      <object-id>16384</object-id>
+    </database>
+    <database id="4" name="myapp_test">
+      <object-id>16385</object-id>
+    </database>
+    <database id="5" name="kirillyershov">
+      <object-id>18228</object-id>
+    </database>
+    <database id="6" name="myapp_development">
+      <object-id>20714</object-id>
+    </database>
+    <database id="7" name="wollli_dev">
+      <object-id>20902</object-id>
+    </database>
+    <database id="8" name="wollli_test">
+      <object-id>23376</object-id>
+    </database>
+    <database id="9" name="route4you_development">
+      <object-id>28291</object-id>
+    </database>
+    <database id="10" name="batareiky_development">
+      <object-id>28785</object-id>
+    </database>
+    <database id="11" name="batareiky_production">
+      <object-id>37161</object-id>
+    </database>
+    <database id="12" name="nucleobot_development">
+      <object-id>37452</object-id>
+    </database>
+    <database id="13" name="eco_dnepr_development">
+      <object-id>37536</object-id>
+    </database>
+    <database id="14" name="eco_dnepr_test">
+      <object-id>37537</object-id>
+    </database>
+    <database id="15" name="Route4you-telegram-bot_development">
+      <object-id>45983</object-id>
+    </database>
+    <database id="16" name="Route4you-telegram-bot_test">
+      <object-id>45984</object-id>
+    </database>
+    <database id="17" name="for_test">
+      <object-id>46165</object-id>
+    </database>
+    <database id="18" name="bi-test_test">
+      <object-id>46205</object-id>
+    </database>
+    <schema id="19" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>12086</introspection-state-number>
+      <introspection-timestamp>2017-09-12.08:51:46.473</introspection-timestamp>
+    </schema>
+    <schema id="20" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="21" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="22" parent="1" name="pg_temp_1">
+      <object-id>11848</object-id>
+    </schema>
+    <schema id="23" parent="1" name="pg_toast_temp_1">
+      <object-id>11849</object-id>
+    </schema>
+    <schema id="24" parent="1" name="information_schema">
+      <object-id>12381</object-id>
+    </schema>
+    <schema id="25" parent="1" name="pg_temp_3">
+      <object-id>46417</object-id>
+    </schema>
+    <schema id="26" parent="1" name="pg_toast_temp_3">
+      <object-id>46418</object-id>
+    </schema>
+    <sequence id="27" parent="19" name="administrators_id_seq">
+      <object-id>46379</object-id>
+      <state-number>12073</state-number>
+    </sequence>
+    <sequence id="28" parent="19" name="product_rates_id_seq">
+      <object-id>46390</object-id>
+      <state-number>12086</state-number>
+    </sequence>
+    <sequence id="29" parent="19" name="products_id_seq">
+      <object-id>46267</object-id>
+      <state-number>12029</state-number>
+    </sequence>
+    <sequence id="30" parent="19" name="sales_id_seq">
+      <object-id>46403</object-id>
+      <state-number>12086</state-number>
+    </sequence>
+    <table id="31" parent="19" name="administrators">
+      <object-id>46381</object-id>
+      <state-number>12073</state-number>
+    </table>
+    <table id="32" parent="19" name="ar_internal_metadata">
+      <object-id>46214</object-id>
+      <state-number>12021</state-number>
+    </table>
+    <table id="33" parent="19" name="product_rates">
+      <object-id>46367</object-id>
+      <state-number>12086</state-number>
+    </table>
+    <table id="34" parent="19" name="products">
+      <object-id>46269</object-id>
+      <state-number>12072</state-number>
+    </table>
+    <table id="35" parent="19" name="sales">
+      <object-id>46355</object-id>
+      <state-number>12086</state-number>
+    </table>
+    <table id="36" parent="19" name="schema_migrations">
+      <object-id>46206</object-id>
+      <state-number>12020</state-number>
+    </table>
+    <column id="37" parent="31" name="id">
+      <state-number>12073</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+      <default-expression>nextval(&apos;administrators_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="38" parent="31" name="email">
+      <state-number>12073</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="39" parent="31" name="password_digest">
+      <state-number>12073</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="40" parent="31" name="first_name">
+      <state-number>12073</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="41" parent="31" name="last_name">
+      <state-number>12073</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="42" parent="31" name="remember_token">
+      <state-number>12073</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="43" parent="31" name="remember_token_expires_at">
+      <state-number>12073</state-number>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="44" parent="31" name="created_at">
+      <state-number>12073</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="45" parent="31" name="updated_at">
+      <state-number>12073</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="46" parent="31" name="administrators_pkey">
+      <object-id>46388</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="47" parent="31" name="administrators_pkey">
+      <object-id>46389</object-id>
+      <columns>id</columns>
+      <underlying-index>administrators_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="48" parent="32" name="key">
+      <state-number>12021</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="49" parent="32" name="value">
+      <state-number>12021</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="50" parent="32" name="created_at">
+      <state-number>12021</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="51" parent="32" name="updated_at">
+      <state-number>12021</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="52" parent="32" name="ar_internal_metadata_pkey">
+      <object-id>46220</object-id>
+      <columns>key</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="53" parent="32" name="ar_internal_metadata_pkey">
+      <object-id>46221</object-id>
+      <columns>key</columns>
+      <underlying-index>ar_internal_metadata_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="54" parent="33" name="rate">
+      <state-number>12072</state-number>
+      <data-type>numeric|0</data-type>
+    </column>
+    <column id="55" parent="33" name="date">
+      <state-number>12072</state-number>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="56" parent="33" name="created_at">
+      <state-number>12072</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="57" parent="33" name="updated_at">
+      <state-number>12072</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="58" parent="33" name="product_id">
+      <state-number>12072</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="59" parent="33" name="id">
+      <state-number>12086</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+      <default-expression>nextval(&apos;product_rates_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <index id="60" parent="33" name="product_rates_pkey">
+      <object-id>46393</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="61" parent="33" name="index_product_rates_on_product_id">
+      <object-id>46373</object-id>
+      <columns>product_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="62" parent="33" name="product_rates_pkey">
+      <object-id>46394</object-id>
+      <columns>id</columns>
+      <underlying-index>product_rates_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="63" parent="33" name="fk_rails_3c49a7473c">
+      <object-id>46374</object-id>
+      <columns>product_id</columns>
+      <ref-key>~.products.products_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="64" parent="34" name="id">
+      <state-number>12029</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+      <default-expression>nextval(&apos;products_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="65" parent="34" name="title">
+      <state-number>12029</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="66" parent="34" name="description">
+      <state-number>12029</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="67" parent="34" name="image">
+      <state-number>12029</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="68" parent="34" name="created_at">
+      <state-number>12029</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="69" parent="34" name="updated_at">
+      <state-number>12029</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="70" parent="34" name="products_pkey">
+      <object-id>46276</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="71" parent="34" name="products_pkey">
+      <object-id>46277</object-id>
+      <columns>id</columns>
+      <underlying-index>products_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="72" parent="35" name="price">
+      <state-number>12071</state-number>
+      <data-type>numeric|0</data-type>
+    </column>
+    <column id="73" parent="35" name="quantity">
+      <state-number>12071</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="74" parent="35" name="date">
+      <state-number>12071</state-number>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="75" parent="35" name="created_at">
+      <state-number>12071</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="76" parent="35" name="updated_at">
+      <state-number>12071</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="77" parent="35" name="product_id">
+      <state-number>12071</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="78" parent="35" name="id">
+      <state-number>12086</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+      <default-expression>nextval(&apos;sales_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <index id="79" parent="35" name="sales_pkey">
+      <object-id>46406</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="80" parent="35" name="index_sales_on_product_id">
+      <object-id>46361</object-id>
+      <columns>product_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="81" parent="35" name="sales_pkey">
+      <object-id>46407</object-id>
+      <columns>id</columns>
+      <underlying-index>sales_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="82" parent="35" name="fk_rails_afd82832c8">
+      <object-id>46362</object-id>
+      <columns>product_id</columns>
+      <ref-key>~.products.products_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="83" parent="36" name="version">
+      <state-number>12020</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <index id="84" parent="36" name="schema_migrations_pkey">
+      <object-id>46212</object-id>
+      <columns>version</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="85" parent="36" name="schema_migrations_pkey">
+      <object-id>46213</object-id>
+      <columns>version</columns>
+      <underlying-index>schema_migrations_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
